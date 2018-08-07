@@ -1,4 +1,6 @@
 ﻿  json_reader.cpp
+  json_value.cpp
+  json_writer.cpp
   Generating code
   Finished generating code
   dummy_server.vcxproj -> C:\Workspace\dummy_server\vc12\bin\dummy_server.exe

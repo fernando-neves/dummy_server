@@ -12,8 +12,10 @@
     <ClInclude Include="..\source\logger.h" />
     <ClInclude Include="..\source\scheduler.h" />
     <ClInclude Include="..\source\settings.h" />
+    <ClInclude Include="..\source\socket_control.h" />
     <ClInclude Include="..\source\tcp_local_server.h" />
     <ClInclude Include="..\source\typedefs.h" />
+    <ClInclude Include="..\source\udp_local_server.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\libs\json\lib_json\json_reader.cpp" />
@@ -46,7 +48,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(ProjectDir)bin\</OutDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(BOOST_ROOT);$(SolutionDir)../</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(BOOST_ROOT);$(SolutionDir)../libs</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(BOOST_ROOT)\lib$(PlatformArchitecture)-msvc-$(CrtSDKReferenceVersion);</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -27,6 +27,12 @@ namespace protocol {
 				this->set_recv();
 			}
 
+			bool get_terminated(
+			) {
+				return this->terminated;
+			}
+
+		private:
 			void set_recv(
 			) {
 				if (!current_socket)
@@ -163,10 +169,12 @@ namespace protocol {
 			}
 
 			void terminate() { terminated = true; }
+
 		private:
-			char buffer_recv[100 * 1000];
+			char buffer_recv[DEFAULT_BUFFER_SIZE];
 
 			bool terminated;
+
 			bool is_recving;
 			bool is_sending;
 

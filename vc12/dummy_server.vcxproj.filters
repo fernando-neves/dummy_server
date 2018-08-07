@@ -1,16 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="..\source\downstream_control.h" />
-    <ClInclude Include="..\source\includes.h" />
-    <ClInclude Include="..\source\logger.h" />
-    <ClInclude Include="..\source\scheduler.h" />
-    <ClInclude Include="..\source\settings.h" />
-    <ClInclude Include="..\source\tcp_local_server.h" />
-    <ClInclude Include="..\source\typedefs.h" />
+    <ClInclude Include="..\source\includes.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\logger.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scheduler.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\settings.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tcp_local_server.h">
+      <Filter>protocol\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\typedefs.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\udp_local_server.h">
+      <Filter>protocol\udp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\socket_control.h">
+      <Filter>protocol\udp\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\downstream_control.h">
+      <Filter>protocol\tcp\stream</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\main.cpp" />
     <ClCompile Include="..\libs\json\lib_json\json_value.cpp">
       <Filter>json</Filter>
     </ClCompile>
@@ -20,10 +39,34 @@
     <ClCompile Include="..\libs\json\lib_json\json_reader.cpp">
       <Filter>json</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="json">
       <UniqueIdentifier>{919e7220-db9c-4145-a640-f29cfbeb996d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{6a1152b5-263b-405e-abdf-2560ae6e197f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{20e74c30-fc96-4a3d-a0d9-329970be86e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{574c75f0-b343-43ae-bf59-361ebbc7c004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\tcp">
+      <UniqueIdentifier>{1cba305e-43cc-4353-b31a-15fe243b7fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\udp">
+      <UniqueIdentifier>{96acf2e2-302c-4e07-b937-8b8b92a9818d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\udp\stream">
+      <UniqueIdentifier>{58ad3548-156b-459a-90f1-f2e25bf158ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\tcp\stream">
+      <UniqueIdentifier>{81b38de6-fd35-4866-9203-899ef54b92ee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

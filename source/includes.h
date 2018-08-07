@@ -7,9 +7,12 @@
 #include <boost/make_shared.hpp>
 #include <boost/thread.hpp>
 
+/* C++ INCLUDES */
 #include <thread>
 #include <string>
 #include <stdint.h>
 #include <iostream>
+
+#define DEFAULT_BUFFER_SIZE 100 * 1000
 
 #endif // !INCLUDES_H
