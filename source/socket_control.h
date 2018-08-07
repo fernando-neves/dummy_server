@@ -1,0 +1,4 @@
+#ifndef SOCKET_CONTROL_H
+#define SOCKET_CONTROL_H
+
+#endif // !SOCKET_CONTROL_H
