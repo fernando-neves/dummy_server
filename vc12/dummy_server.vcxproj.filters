@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\source\downstream_control.h" />
+    <ClInclude Include="..\source\includes.h" />
+    <ClInclude Include="..\source\logger.h" />
+    <ClInclude Include="..\source\scheduler.h" />
+    <ClInclude Include="..\source\settings.h" />
+    <ClInclude Include="..\source\tcp_local_server.h" />
+    <ClInclude Include="..\source\typedefs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\main.cpp" />
+    <ClCompile Include="..\libs\json\lib_json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\json\lib_json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\json\lib_json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="json">
+      <UniqueIdentifier>{919e7220-db9c-4145-a640-f29cfbeb996d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
