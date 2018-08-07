@@ -6,7 +6,7 @@
 #include "logger.h"
 
 /* JSON LIB INCLUDES */
-#include <libs/json/json.h>
+#include <lib_json/json.h>
 
 namespace helper {
     class settings {

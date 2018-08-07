@@ -5,7 +5,7 @@
 #include <thread>
 
 /* JSON LIB INCLUDES */
-#include <libs/json//json.h>
+#include <lib_json/json.h>
 
 int main() {
     helper::settings::get()->load_settings("server_manager.conf");

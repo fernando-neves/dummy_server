@@ -30,17 +30,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\libs\json\lib_json\json_value.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libs\json\lib_json\json_writer.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libs\json\lib_json\json_reader.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\main.cpp">
       <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\lib_json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\lib_json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\lib_json\json_writer.cpp">
+      <Filter>json</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
