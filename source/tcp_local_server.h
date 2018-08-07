@@ -106,20 +106,4 @@ namespace protocol {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #endif // !TCP_LOCAL_SERVER_H

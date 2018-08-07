@@ -3,6 +3,8 @@
 
 /* THIS PROJECT INCLUDES */
 #include "tcp_local_server.h"
+#include "udp_local_server.h"
+
 #include "logger.h"
 
 /* JSON LIB INCLUDES */
@@ -31,10 +33,8 @@ namespace helper {
 					 tcp_port
 			 );*/
 
-			protocol::tcp::tcp_local_server::get()->set_local_endpoint(
-				"0.0.0.0",
-				9090
-			);
+			protocol::tcp::tcp_local_server::get()->set_local_endpoint("0.0.0.0", 9090);
+			protocol::udp::udp_local_server::get()->set_local_endpoint("0.0.0.0", 9191);
 		}
 
 		static settings* get() {

@@ -7,6 +7,12 @@
 typedef std::string buffer_t;
 typedef boost::shared_ptr<buffer_t> buffer_ptr;
 
+typedef boost::asio::ip::udp::endpoint udp_endpoint;
+typedef boost::shared_ptr<udp_endpoint> udp_endpoint_ptr;
+
+typedef boost::asio::ip::udp::socket udp_socket;
+typedef boost::shared_ptr<udp_socket> udp_socket_ptr;
+
 typedef boost::asio::ip::tcp::endpoint tcp_endpoint;
 typedef boost::shared_ptr<tcp_endpoint> tcp_endpoint_ptr;
 
