@@ -37,9 +37,6 @@ private:
 			catch (const std::exception&) {
 				std::cout << "\n " << __FUNCTION__ << ": " << __LINE__;
 			}
-
-			/* TODO - AFTER REMOVE THIS SLEEP */
-			//std::this_thread::sleep_for(std::chrono::milliseconds(1));
 		}
 	}
 

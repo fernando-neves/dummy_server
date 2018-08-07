@@ -16,6 +16,9 @@ int main() {
     protocol::tcp::tcp_local_server::get();
     protocol::tcp::tcp_local_server::get()->initialize();
 
+	protocol::udp::udp_local_server::get();
+	protocol::udp::udp_local_server::get()->initialize();
+
     std::this_thread::sleep_for(std::chrono::milliseconds(UINT32_MAX));
 
     return 0;

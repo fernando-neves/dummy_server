@@ -126,15 +126,6 @@ namespace protocol {
 			) {
 			}
 
-			socket_control_ptr create_socket_control(
-				udp_socket_ptr downstream_socket
-			) {
-				socket_control_ptr _socket_control =
-					boost::make_shared<socket_control>(downstream_socket);
-
-				downstream_socket_list.push_back(_socket_control);
-				return _socket_control;
-			}
 		private:
 			char recv_buffer[DEFAULT_BUFFER_SIZE];
 
