@@ -4,9 +4,6 @@
     <ClInclude Include="..\source\includes.h">
       <Filter>helper</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\logger.h">
-      <Filter>helper</Filter>
-    </ClInclude>
     <ClInclude Include="..\source\scheduler.h">
       <Filter>helper</Filter>
     </ClInclude>
@@ -33,20 +30,8 @@
     <ClCompile Include="..\source\main.cpp">
       <Filter>main</Filter>
     </ClCompile>
-    <ClCompile Include="..\libs\lib_json\json_reader.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libs\lib_json\json_value.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libs\lib_json\json_writer.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="json">
-      <UniqueIdentifier>{919e7220-db9c-4145-a640-f29cfbeb996d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="helper">
       <UniqueIdentifier>{6a1152b5-263b-405e-abdf-2560ae6e197f}</UniqueIdentifier>
     </Filter>

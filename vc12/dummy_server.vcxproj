@@ -9,7 +9,6 @@
   <ItemGroup>
     <ClInclude Include="..\source\downstream_control.h" />
     <ClInclude Include="..\source\includes.h" />
-    <ClInclude Include="..\source\logger.h" />
     <ClInclude Include="..\source\scheduler.h" />
     <ClInclude Include="..\source\settings.h" />
     <ClInclude Include="..\source\socket_control.h" />
@@ -18,9 +17,6 @@
     <ClInclude Include="..\source\udp_local_server.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\libs\lib_json\json_reader.cpp" />
-    <ClCompile Include="..\libs\lib_json\json_value.cpp" />
-    <ClCompile Include="..\libs\lib_json\json_writer.cpp" />
     <ClCompile Include="..\source\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
