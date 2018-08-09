@@ -1,4 +1,4 @@
-# dummy_server
+# Dummy Server
 Server echo for test latency.
 
 
